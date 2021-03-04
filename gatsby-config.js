@@ -108,16 +108,16 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // edit below
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `G-97SM49SRRC`,
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Tanners Blog`,
+        short_name: `TBlog`,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#1B1C21`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
@@ -130,6 +130,5 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    `gatsby-plugin-netlify-cms`,
   ],
 }

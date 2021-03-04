@@ -7,7 +7,7 @@ import Button from "../components/button"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Zero to CTO"
+    const siteTitle = "Code Happier"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -15,21 +15,34 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
+        <img style={{ margin: 0 }} src="./developer1.jpg" alt="Gatsby Scene" />
         <h1>
-          Hey people{" "}
+          Hey there.
           <span role="img" aria-label="wave emoji">
             👋
           </span>
         </h1>
-        <p>Welcome to your new Gatsby website. You are on your home page.</p>
         <p>
-          This starter comes out of the box with styled components and Gatsby's
-          default starter blog running on Netlify CMS.
+          In this blog, I share tidbits from my development experience and my
+          entrepreneurial journey building my own SaaS product.
         </p>
-        <p>Now go build something great!</p>
+        <p>
+          I am CTO & co-founder of <a href="https://coworksapp.com/">Coworks</a>
+          , a flexible office space management platform, and I'm passionate
+          about learning new things, improving your skills, and how to become a
+          better teammate.
+        </p>
+        <p>
+          I cover everything from my experience with new libraries, ways I've
+          grown as a engineer, and how I've applied my knowledge to build
+          Coworks!
+        </p>
+        <p>
+          I write in ReactJS, Kotlin/Java for Android, Rails, and ReactNative
+          daily and I hope to provide something useful to you.
+        </p>
         <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
+          <Button marginTop="35px">Let's do this</Button>
         </Link>
       </Layout>
     )
