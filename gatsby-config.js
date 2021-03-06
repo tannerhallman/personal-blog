@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Code Happier Blog`,
+    title: `Code Happier`,
     author: `Tanner`,
     description: `A personal blog built to share what I've learned and things that interest me.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://codehappier.com/`,
     social: {
-      twitter: `gatsbyjs`,
+      twitter: `hallmanitor`,
     },
   },
   plugins: [
