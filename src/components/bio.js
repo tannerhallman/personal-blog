@@ -7,7 +7,7 @@
 
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
@@ -16,7 +16,7 @@ function Bio() {
   return (
     <StaticQuery
       query={bioQuery}
-      render={data => {
+      render={(data) => {
         const { author, social } = data.site.siteMetadata
         return (
           <Container>
@@ -31,7 +31,8 @@ function Bio() {
               }}
               imgStyle={{
                 borderRadius: `50%`,
-              }} />
+              }}
+            />
             <p>
               Written by <strong>{author}</strong>, a framework built upon the
               React library.
@@ -41,27 +42,28 @@ function Bio() {
               </a>
             </p>
           </Container>
-        );
+        )
       }}
     />
-  );
+  )
 }
 
-const bioQuery = graphql`query BioQuery {
-  avatar: file(absolutePath: {regex: "/gatsby-icon.png/"}) {
-    childImageSharp {
-      gatsbyImageData(width: 50, height: 50, layout: FIXED)
+const bioQuery = graphql`
+  query BioQuery {
+    avatar: file(absolutePath: { regex: "/tanner.jpeg/" }) {
+      childImageSharp {
+        gatsbyImageData(width: 50, height: 50, layout: FIXED)
+      }
     }
-  }
-  site {
-    siteMetadata {
-      author
-      social {
-        twitter
+    site {
+      siteMetadata {
+        author
+        social {
+          twitter
+        }
       }
     }
   }
-}
 `
 
 const Container = styled.div`
