@@ -2,7 +2,7 @@
   "name": "personal-blog",
   "private": true,
   "description": "A personal blog starter for a blog powered by Netlify CMS, based on the default blog starter",
-  "version": "2.0.0",
+  "version": "0.0.0",
   "author": "Tanner Hallman <tannerdevelops@gmail.com>",
   "dependencies": {
     "@commitlint/cli": "^12.0.1",
