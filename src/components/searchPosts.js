@@ -41,9 +41,9 @@ const SearchBar = styled.div`
   }
 `
 
-const SearchedPosts = ({ results }) =>
-  results.length > 0 ? (
-    results.map(node => {
+const SearchedPosts = ({}) =>
+  [].length > 0 ? (
+    [].map((node) => {
       const date = node.date
       const title = node.title || node.slug
       const description = node.description
@@ -57,9 +57,9 @@ const SearchedPosts = ({ results }) =>
               marginBottom: rhythm(1 / 4),
             }}
           >
-            <Link style={{ boxShadow: `none` }} to={`/blog${slug}`}>
+            {/* <Link style={{ boxShadow: `none` }} to={`/blog${slug}`}>
               {title}
-            </Link>
+            </Link> */}
           </h3>
           <small>{date}</small>
           <p
@@ -107,15 +107,19 @@ const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
   const { search } = queryString.parse(location.search)
   const [query, setQuery] = useState(search || "")
 
-  const results = useFlexSearch(
-    query,
-    localSearchBlog.index,
-    JSON.parse(localSearchBlog.store)
-  )
+  // const index = localSearchBlog.index
+  // const store = JSON.parse(localSearchBlog.store)
+
+  // const results = useFlexSearch(
+  //   query,
+  //   index,
+  //   store
+
+  // )
 
   return (
     <>
-      <SearchBar>
+      {/* <SearchBar>
         <svg
           focusable="false"
           xmlns="http://www.w3.org/2000/svg"
@@ -128,15 +132,17 @@ const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
           type="search"
           placeholder="Search all posts"
           value={query}
-          onChange={e => {
+          onChange={(e) => {
             navigate(
               e.target.value ? `/blog/?search=${e.target.value}` : "/blog/"
             )
             setQuery(e.target.value)
           }}
         />
-      </SearchBar>
-      {query ? <SearchedPosts results={results} /> : <AllPosts posts={posts} />}
+      </SearchBar> */}
+      <AllPosts posts={posts} />
+      {query && <SearchedPosts />}
+      {/* {query ? <SearchedPosts results={results} /> : <AllPosts posts={posts} />} */}
     </>
   )
 }
