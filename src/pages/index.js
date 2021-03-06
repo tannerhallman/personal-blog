@@ -27,10 +27,9 @@ class IndexPage extends React.Component {
           entrepreneurial journey building my own SaaS product.
         </p>
         <p>
-          I am CTO & co-founder of <a href="https://coworksapp.com/">Coworks</a>
-          , a flexible office space management platform, and I'm passionate
-          about learning new things, improving your skills, and how to become a
-          better teammate.
+          I am a co-founder of <a href="https://coworksapp.com/">Coworks</a>, a
+          flexible office space management platform, and I'm passionate about
+          learning, improving my skills, and sharing that knowledge.
         </p>
         <p>
           I cover everything from my experience with new libraries, ways I've
@@ -38,8 +37,8 @@ class IndexPage extends React.Component {
           Coworks!
         </p>
         <p>
-          I write in ReactJS, Kotlin/Java for Android, Rails, and ReactNative
-          daily and I hope to provide something useful to you.
+          I code in ReactJS, Kotlin/Java for Android, Rails on the backend, and
+          React Native daily and I hope to provide something useful to you.
         </p>
         <Link to="/blog/">
           <Button marginTop="35px">Let's do this</Button>
