@@ -5,6 +5,8 @@
   "version": "2.0.0",
   "author": "Tanner Hallman <tannerdevelops@gmail.com>",
   "dependencies": {
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "babel-plugin-styled-components": "^1.12.0",
@@ -29,6 +31,7 @@
     "gatsby-remark-vscode": "^3.2.0",
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-transformer-sharp": "^3.0.0",
+    "husky": "^5.1.3",
     "netlify-cms-app": "^2.14.26",
     "query-string": "^6.14.1",
     "react": "^17.0.1",
@@ -37,6 +40,7 @@
     "react-switch": "^6.0.0",
     "react-typography": "^0.16.19",
     "react-use-flexsearch": "^0.1.1",
+    "standard-version": "^9.1.1",
     "styled-components": "^5.2.1",
     "typeface-merriweather": "1.1.13",
     "typeface-montserrat": "1.1.13",
@@ -69,6 +73,15 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "changelog:release": "standard-version",
+    "changelog:release:minor": "standard-version --release-as minor",
+    "changelog:release:patch": "standard-version --release-as patch",
+    "changelog:release:major": "standard-version --release-as major"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
