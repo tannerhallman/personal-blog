@@ -48,7 +48,7 @@ module.exports = {
         index: ["title", "rawBody"],
         store: ["id", "slug", "date", "title", "excerpt", "description"],
         normalizer: ({ data }) =>
-          data.allMdx.nodes.map(node => ({
+          data.allMdx.nodes.map((node) => ({
             id: node.id,
             slug: node.fields.slug,
             rawBody: node.rawBody,
@@ -118,11 +118,11 @@ module.exports = {
         name: `Tanners Blog`,
         short_name: `TBlog`,
         start_url: `/`,
-        background_color: `#1B1C21`,
+        background_color: `#FFFFFF`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/tanner.jpeg`,
       },
     },
     {
