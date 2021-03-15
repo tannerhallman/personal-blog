@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/gatsbyjs/gatsby-starter-blog/compare/v0.1.3...v0.1.4) (2021-03-15)
+
+
+### Bug Fixes
+
+* fixing the search ([d5517c3](https://github.com/gatsbyjs/gatsby-starter-blog/commit/d5517c36a95f6ba23846733ba9f02b3e8b4e2abe))
+
 ### 0.1.3 (2021-03-06)
 
 
